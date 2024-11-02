@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Customization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Customize Your Pizza</h1>
+        </header>
+
+        <form id="pizzaForm">
+            <div class="form-group">
+                <label for="base">Choose a Base:</label>
+                <select id="base" name="base" required>
+                    <option value="thin">Thin Crust</option>
+                    <option value="regular">Regular Crust</option>
+                    <option value="deep-dish">Deep Dish</option>
+                    <option value="gluten-free">Gluten-Free</option>
+                    <option value="stuffed-crust">Stuffed Crust</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="sauce">Choose a Sauce:</label>
+                <select id="sauce" name="sauce" required>
+                    <option value="tomato">Tomato Sauce</option>
+                    <option value="pesto">Pesto Sauce</option>
+                    <option value="alfredo">Alfredo Sauce</option>
+                    <option value="bbq">BBQ Sauce</option>
+                    <option value="garlic-ranch">Garlic Ranch</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="cheese">Choose Cheese:</label>
+                <select id="cheese" name="cheese" required>
+                    <option value="mozzarella">Mozzarella</option>
+                    <option value="cheddar">Cheddar</option>
+                    <option value="parmesan">Parmesan</option>
+                    <option value="vegan">Vegan Cheese</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Choose Veggies:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="veggies" value="olives"> Olives</label>
+                    <label><input type="checkbox" name="veggies" value="bell-peppers"> Bell Peppers</label>
+                    <label><input type="checkbox" name="veggies" value="onions"> Onions</label>
+                    <label><input type="checkbox" name="veggies" value="mushrooms"> Mushrooms</label>
+                    <label><input type="checkbox" name="veggies" value="spinach"> Spinach</label>
+                </div>
+            </div>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
